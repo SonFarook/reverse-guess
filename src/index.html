@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- Background Container -->
+    <div class="bg-slate-900 h-screen flex justify-center items-center">
+      <!-- Main Container-->
+      <div
+        class="bg-slate-300 p-2 md:p-8 md:min-w-[600px] text-center rounded-lg shadow-md shadow-slate-200 relative flex flex-col items-center"
+      >
+        <!-- Header -->
+        <h1
+          class="header text-slate-700 font-bold text-xl md:text-3xl mt-4 w-full"
+        >
+          Think of a number between 1-100!
+        </h1>
+
+        <!-- Start Button -->
+        <button
+          class="start rounded-xl bg-slate-900 px-12 py-2 mt-24 text-white font-bold hover:cursor-pointer active:bg-slate-700"
+        >
+          Start
+        </button>
+
+        <!-- Reset Button-->
+        <button
+          class="reset hover:cursor-pointer hover:opacity-90 active:opacity-80 duration-500 mt-4 md:absolute md:right-2 md:bottom-2 collapse"
+        >
+          <img src="img/Reset.png" class="h-7" />
+        </button>
+
+        <!-- Higher, Lower, Right! & Reset Buttons -->
+        <div class="flex justify-center gap-2 md:gap-3 mt-12">
+          <button
+            class="higher bg-red-500 p-4 md:p-6 text-white font-bold rounded-lg hover:cursor-pointer hover:scale-105 duration-300 active:bg-red-900 disabled:opacity-50 disabled:pointer-events-none text-2xl collapse"
+          >
+            Higher
+          </button>
+          <button
+            class="lower bg-green-500 p-4 md:p-6 text-white font-bold rounded-lg hover:cursor-pointer hover:scale-105 duration-300 active:bg-green-800 disabled:opacity-50 disabled:pointer-events-none text-2xl collapse"
+          >
+            Lower
+          </button>
+          <button
+            class="right bg-blue-500 p-4 md:p-6 text-white font-bold rounded-lg hover:cursor-pointer hover:scale-105 duration-300 active:bg-blue-800 disabled:opacity-50 disabled:pointer-events-none text-2xl collapse"
+          >
+            Right!
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
